@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic App</title>
+    <style>
+        input, button {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="color:rgb(80, 26, 29)">TRAFFIC MONITOR</h1>
+    </center>
+    <hr>
+
+    <center>
+        <h2>Less congested lane:</h2>
+        <form action="/cr" method="post">
+            <label for="hour">Enter the hour:</label>
+            <input type="number" id="hour" name="hour" min="0" max="23">
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+
+    <center>
+        <h2>Peak hour of a lane:</h2>
+        <form action="/peak" method="post">
+            <input type="submit" value="Show Peak Hours">
+        </form>
+    </center>
+
+
+    <center>
+        <h2>Traffic flow in lanes:</h2>
+        <form action="/traffic_flow" method="post">
+            <input type="submit" value="Show Graph">
+        </form>
+    </center>
+</body>
+</html>
